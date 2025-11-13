@@ -1,0 +1,413 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-size: 25px;
+    background: rgb(238, 238, 238);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #505050;
+    width: 92%;
+    padding: 10px;
+    display: inline-block;
+    background: #c4e5ff;
+    vertical-align: middle;
+    font-size: 2.2rem; /* フォントサイズを柔軟に */
+    border-radius: 25px;
+    margin: 10px 2%;
+    display: flex; /* 子要素を横並びにする */
+    align-items: center; /* 画像とテキストを垂直方向に中央揃え */
+}
+
+h1:before {
+    content: '●';
+    color: rgb(255, 255, 255);
+}
+  
+.logo {
+    width: 95%; /* 画像サイズを調整 */
+    height: auto; /* 縦横比を維持 */
+    margin: 3% 1rem 0 1rem; /* 画像とテキストの間にスペース */
+}
+
+h2 {
+    color: #eee;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px 2%;
+    font-size: 1.2rem;
+    background-color: #5484a9;
+    border-radius: 5px;
+}
+
+h3 {
+    color: #eee;
+    font-weight: bold;
+    padding: 3px 0 1px 16px;
+    margin: 30px 15px 20px 10px;
+    font-size: 1rem;
+    background-color: rgb(0, 73, 118);
+}
+
+.meeting_list {
+    width: 80%;
+    border-radius: 25px;
+    margin: 5% auto 5% auto;
+    padding: 12px;
+    background-color: rgba(195, 219, 255, 0.886);
+}
+
+.page {
+    width: 80%;
+    height: auto;
+    margin: 5% auto 5% auto;
+    padding: 2%;
+    background: rgb(255, 255, 255);
+    border-radius: 10%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.basic {
+    margin: 3px 7%;
+    line-height: 1.6em;
+    text-align: left;
+}
+
+.bottom {
+    margin: 0px 7% 40px 7%;
+    line-height: 1.6em;
+    text-align: left;
+}
+
+.login {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    text-align: right;
+}
+
+.logout {
+    font-size: 1rem;
+    text-align: right;
+    margin: 0 5%;
+    color: blue;
+    text-decoration: underline;
+}
+
+.kajou {
+    margin-left: 3%;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    padding: 12px 40px;
+    background: #467fb8c3;
+    color: #ffffff;
+    line-height: 1em;
+    transition: .3s;
+    box-shadow: 2px 2px 2px #8a8a8a;
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+
+.button:hover {
+    box-shadow: none;
+}
+
+.button-container {
+    display: flex;
+    gap: 3%;
+    justify-content: flex-start;
+    flex-wrap: wrap; /* ボタンが狭い画面で折り返す */
+    margin-left: 7% ;
+}
+
+.button2 {
+    display       : inline-block;
+    border-radius : 20px;          /* 角丸       */
+    font-size     : 13pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 10px 30px;   /* 余白       */
+    background    : #467fb8c3;     /* 背景色     */
+    color         : #ffffff;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 2px 2px 2px #8a8a8a;  /* 影の設定 */
+    font-weight: bold;
+    margin-left: 82%;
+    margin-bottom: 3%;
+  }
+
+.button2:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+}
+
+.button3 {
+    display       : inline-block;
+    border-radius : 20px;          /* 角丸       */
+    font-size     : 13pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 10px 30px;   /* 余白       */
+    background    : #467fb8c3;     /* 背景色     */
+    color         : #ffffff;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 2px 2px 2px #8a8a8a;  /* 影の設定 */
+    font-weight: bold;
+    margin-bottom: 3%;
+  }
+
+.button3:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+}
+
+.button4 {
+    display       : inline-block;
+    border-radius : 20px;          /* 角丸       */
+    font-size     : 10pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 10px 30px;   /* 余白       */
+    background    : #4156bd98;     /* 背景色     */
+    color         : #ffffff;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 2px 2px 2px #8a8a8a;  /* 影の設定 */
+    font-weight: bold;
+    margin-left: 82%;
+    margin-bottom: 3%;
+  }
+
+.button4:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+}
+
+.button4-1 {
+    display       : inline-block;
+    border-radius : 20px;          /* 角丸       */
+    font-size     : 11pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 6px 10px;   /* 余白       */
+    background    : #4156bd98;     /* 背景色     */
+    color         : #ffffff;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 2px 2px 2px #8a8a8a;  /* 影の設定 */
+    font-weight: bold;
+    margin-left: 2%;
+    margin-bottom: 1.5%;
+    margin-top: 1.5%;
+  }
+
+.button4-1:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+}
+
+
+.button4-2 {
+    display       : inline-block;
+    border-radius : 20px;          /* 角丸       */
+    font-size     : 11pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 8px 10px;   /* 余白       */
+    background    : #4156bd98;     /* 背景色     */
+    color         : #ffffff;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 2px 2px 2px #8a8a8a;  /* 影の設定 */
+    font-weight: bold;
+    margin-left: 85%;
+    margin-bottom: 3%;
+    margin-top: 1%;
+  }
+
+.button4-2:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+}
+
+.button4-3 {
+    display       : inline-block;
+    border-radius : 10px;          /* 角丸       */
+    font-size     : 15pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 6px 10px;   /* 余白       */
+    background    : #d898d8;     /* 背景色     */
+    color         : #ffffff;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 2px 2px 2px #8a8a8a;  /* 影の設定 */
+    font-weight: bold;
+    margin-bottom: 5%;
+    margin-top: 1.5%;
+  }
+
+.button4-3:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+}
+
+.button-container2 {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    margin: 2% 3% 3% 0;
+}
+
+.button5 {
+    display       : inline-block;
+    border-radius : 20px;          /* 角丸       */
+    font-size     : 11pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 5px 15px;   /* 余白       */
+    background    : #467fb8c3;     /* 背景色     */
+    color         : #ffffff;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 2px 2px 2px #8a8a8a;  /* 影の設定 */
+    font-weight: bold;
+    margin-left: 7%;
+  }
+
+.button5:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+}
+
+.button6 {
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    padding: 12px 40px;
+    background: #467fb8c3;
+    color: #ffffff;
+    line-height: 1em;
+    transition: .3s;
+    box-shadow: 2px 2px 2px #8a8a8a;
+    font-weight: bold;
+    margin-left: 7%;
+  }
+
+.button6:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+}
+
+.box{
+    width: 90%;
+    margin-left: 5%;
+}
+
+/* スマホやタブレット対応 */
+@media screen and (max-width: 768px) {
+    h1 {
+        width: 92%;
+        font-size: 1.8rem;
+        margin: 10px 2%;
+    }
+
+    .logo {
+        width: 95%; /* 画像サイズを調整 */
+        height: auto; /* 縦横比を維持 */
+        margin-right: 1rem; /* 画像とテキストの間にスペース */
+        margin-left: 1rem; /* 画像とテキストの間にスペース */
+    }
+
+    .button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    .button4-3 {
+        font-size: 16px;
+        padding: 6px 14px;
+        margin-left: 1%;
+        margin-bottom: 5%;
+        margin-top: 1.5%;
+    }
+
+    .button-container {
+        display: flex;
+        gap: 5%;
+        justify-content: flex-start;
+        flex-wrap: wrap; /* ボタンが狭い画面で折り返す */
+        margin-left: 5% ;
+    }
+
+    .button-container2 {
+        display: flex;
+        gap: 3%;
+        justify-content: center;
+        margin: 2% 3% 3% 0;
+    }
+
+    .page {
+        width: 90%;
+        padding: 2%;
+    }
+
+    .article {
+        width: 95%;
+    }
+
+    .button4{
+        margin-left: 62%;
+    }
+}
+
+
+/* チャット部分*/
+.chat-container {
+    width: 70%;
+    margin: 20px auto;
+}
+
+.messages {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.form-container {
+    display: block;
+    /* 確実に表示させる */
+    margin-top: 20px;
+
+    .summary-container {
+        margin: 20px auto;
+        padding: 10px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+    }
+
+    .summary-category {
+        margin-bottom: 20px;
+    }
+
+    .summary-category h3 {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+    }
+
+    .summary-category ul {
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    .summary-category ul li {
+        margin-bottom: 5px;
+    }
+}

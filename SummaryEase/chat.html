@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>チャットアプリ</title>
+</head>
+
+<body>
+    <div class="page">
+        <img src="logo3.png" alt="Logo" class="logo">
+        <div id="chat-container">
+            <h1><span id="roomname"></span></h1>
+            <div class="messages"><div id="messages" aria-live="polite"></div></div>
+            <form id="message-form">
+                <p>ユーザー名：<span id="username"></span></p>
+                <label for="message">メッセージ：</label>
+                <input type="text" id="message" name="message" required>
+                <button type="submit" class="button4-1">送信</button>
+            </form>
+        </div>
+        <div id="summary-container">
+            <h2>会話の要約</h2>
+         <div class="messages"><div id="categorized-summary" aria-live="polite"></div></div>
+          <div class="button-container2">
+            <button id="update-summary" class="button4-3">会話を要約</button>
+            <button id="reset-summary" class="button4-3">要約リセット</button>
+            <button id="reset-conversation" class="button4-3">会話リセット</button>
+          </div>
+        </div>
+        <div id="saved-items">
+            <h2>保存された項目</h2>
+            <ul id="saved-items-list"></ul>
+            <form id="add-item-form">
+                <label for="new-item" class="basic">新しい項目：</label>
+                <input type="text" id="new-item" name="new-item" required>
+                <button type="submit" class="button4-1">追加</button>
+            </form>
+        </div>
+    </div>
+    <script src="chat.js"></script>
+</body>
+
+</html>
